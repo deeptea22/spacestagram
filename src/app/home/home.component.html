@@ -1,0 +1,28 @@
+<div class="myprojects">
+    <h1 class="title">Astronomy Photo of the Day</h1>
+    <p class="title">Brought to you by NASA's Astronomy Photo of the Day (APOD) API</p>
+    <ngx-spinner>
+    </ngx-spinner>
+    <div class="project-container" *ngIf="lis.length!=0">
+        <ng-container *ngFor="let e of lis;">
+        <div class="project" *ngIf="e.media_type=='image'">        
+            <div class="project-content">
+                <h4 class="project-title">{{e.title}}  
+                            <app-like-feature></app-like-feature>
+                </h4>
+                
+                <div class="project-details">
+                    <p>{{e.explanation}}</p>
+                    <ul>
+                        <li>{{e.copyright}}</li>
+                        <li>{{e.date}}</li>                    
+                    </ul>
+                </div>
+            </div>
+            <div class="project-img" *ngIf="e.media_type=='image'">
+                <img src="{{e.hdurl}}" alt="Customer Satisfaction Index" />
+            </div>
+        </div>
+        </ng-container>
+    </div>
+</div>

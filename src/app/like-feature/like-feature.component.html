@@ -1,0 +1,8 @@
+<div class = "container">
+    <button class="like" *ngIf="likeCount==0" (click)="likeTheButton()">
+        <span class="iconify" data-icon="ci:heart-outline" style="color: #c68ffa;" data-width="40" data-height="40"></span>
+    </button>
+    <button class="like" *ngIf="likeCount==1" (click)="likeTheButton()">
+        <span class="iconify" data-icon="ci:heart-fill" style="color: #c68ffa;" data-width="40" data-height="40"></span>
+    </button>
+</div>
