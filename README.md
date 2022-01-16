@@ -3,6 +3,8 @@
 ## Deployed Link
 https://deeptea22.github.io/spacestagram/
 
+[Link to My Shopify Store](https://github.com/deeptea22/spacestagram/blob/main/My%20Shopify%20Store.md)
+
 ## Problem Statement
 - A webpage that can pull images, and allow the user to “like” and “unlike” their favourite images. 
 - A simple to use interface that makes it easy to: 
